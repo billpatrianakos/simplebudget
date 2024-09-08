@@ -13,19 +13,27 @@
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12 centered-text">
-        fieldset here
-      </div>
-    </div>
-  </div>
   
   <div class="container">
     <div class="row">
       <div class="col-12 centered-text">
         <h1>Simple Budget</h1>
         <h2>(a simple weekly budget calculator)</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 centered-text">
+        <form>
+          <input type="number" step=".01" name="availableCash" />
+          <fieldset>
+            <input type="number" step=".01" name="expense" />
+            <span class="additional-inputs"></span>
+          </fieldset>
+          <button id="calculate">Calculate</button> <button id="new-expense">New Expense</button>
+        </form>
       </div>
     </div>
   </div>

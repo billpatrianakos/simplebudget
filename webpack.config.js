@@ -7,6 +7,7 @@ const TerserPlugin            = require('terser-webpack-plugin')
 const buildPath               = path.resolve(__dirname, 'dist');
 const CopyPlugin              = require("copy-webpack-plugin");
 const fs                      = require('fs');
+const jquery                  = require('jquery');
 
 module.exports = {
   //devtool: 'source-map',
