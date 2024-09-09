@@ -1,3 +1,6 @@
+require('normalize.css/normalize.css');
+require('../less/style.less');
+
 // Global variables & requires
 const _           = require('lodash');
 let availableCash = 0;

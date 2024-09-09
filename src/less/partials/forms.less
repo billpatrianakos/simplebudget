@@ -1,0 +1,38 @@
+input[name="availableCash"] {
+  padding: 1em;
+  margin: 1em auto;
+}
+
+fieldset {
+  border: none;
+
+  input[type="number"] {
+    display: block;
+    margin: 0.5em auto;
+    padding: 1em;
+  }
+}
+
+button {
+  padding: 0.75em 1em;
+  font-weight: bold;
+  margin-right: 0.5em;
+  cursor: pointer;
+  background: @green;
+  border: none;
+  .border-radius(2px);
+  color: @white;
+  .text-shadow(1px, -1px, 2px, darken(@white, 25%));
+
+  &:last {
+    margin-right: 0;
+  }
+
+  &#new-expense {
+    background: @orange;
+  }
+
+  &#reset {
+    background: @red;
+  }
+}
