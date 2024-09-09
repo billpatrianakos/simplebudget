@@ -5,20 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= htmlWebpackPlugin.options.title %></title>
-  <meta name="description" content="Moss creates modern guitar infused alt-rock fused with synths, embracing new technology and experimental techniques.">
-  <meta name="author" content="Moss" />
+  <meta name="description" content="A quick and dirty tool to track your budget on the fly without having to wait for the bank to sort out pending payments">
+  <meta name="author" content="William Moss II" />
   <link rel="author" href="/humans.txt" />
-  <link rel="micropub" href="https://midorimoss.art/api/micropub" />
 </head>
 
 <body>
 
   
   <div class="container">
-    <div class="row">
+    <header class="row">
       <div class="col-12 centered-text">
         <h1>Simple Budget</h1>
         <h2>(a simple weekly budget calculator)</h2>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 centered-text">
+        <h3 id="total" class="total"></h3>
+        <h4 class="available">available to spend</h4>
       </div>
     </div>
   </div>
@@ -32,7 +40,9 @@
             <input type="number" step=".01" name="expense" />
             <span class="additional-inputs"></span>
           </fieldset>
-          <button id="calculate">Calculate</button> <button id="new-expense">New Expense</button>
+          <button name="calculate"   id="calculate">Calculate</button> 
+          <button name="new-expense" id="new-expense">New Expense</button> 
+          <button name="reset"       id="reset">Reset</button>
         </form>
       </div>
     </div>
